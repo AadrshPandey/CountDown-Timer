@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CountDown Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">CountDown Timer</div>
+        <div class="main">
+            <div class="box">
+                <div class="column">
+                    <div class="digit" id="daysNum1">0</div>
+                    <div class="digit" id="daysNum2">0</div>
+                </div>
+                <div class="name">Days</div>
+            </div>
+            <div class="box">
+                <div class="column">
+                    <div class="digit" id="hoursNum1">0</div>
+                    <div class="digit" id="hoursNum2">0</div>
+                </div>
+                <div class="name">Hours</div>
+            </div>
+            <div class="box">
+                <div class="column">
+                    <div class="digit" id="minutesNum1">0</div>
+                    <div class="digit" id="minutesNum2">0</div>
+                </div>
+                <div class="name">Months</div>
+            </div>
+            <div class="box">
+                <div class="column">
+                    <div class="digit" id="secondsNum1">0</div>
+                    <div class="digit" id="secondsNum2">0</div>
+                </div>
+                <div class="name">Seconds</div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="timeSelector">
+                <div class="setTime">
+                    <input type="number" class="time" min="0" id="setDays" placeholder="days">
+                    <input type="number" class="time" min="0" id="setHours" max="23" placeholder="hrs">
+                    <input type="number" class="time" min="0" id="setMinutes" max="59" placeholder="min">
+                    <input type="number" class="time" min="0" id="setSeconds" max="59" placeholder="sec">
+                </div>
+                <button class="button">Set Time</button>
+            </div>
+        </div>
+        <div class="progressBar">
+            <div class="progressStatus">0%</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
